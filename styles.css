@@ -1,1 +1,162 @@
 /*  your css code here. If applicable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+}
+
+.nav a {
+  font-size: 13px;
+  color: #202124;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-apps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.nav-apps span {
+  width: 5px;
+  height: 5px;
+  background: #5f6368;
+  border-radius: 50%;
+}
+
+.signin-btn {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.signin-btn:hover {
+  background: #1765cc;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Main */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 30px;
+  flex: 1;
+}
+
+.google-logo svg {
+  width: 272px;
+  height: 92px;
+  margin-bottom: 28px;
+}
+
+/* Search */
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 544px;
+  margin-bottom: 24px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 12px 52px 12px 20px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  font-size: 16px;
+  outline: none;
+  color: #202124;
+}
+
+.search-bar:hover,
+.search-bar:focus {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.mic-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Buttons */
+.btn-row {
+  display: flex;
+  gap: 12px;
+}
+
+.google-btn {
+  background: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.google-btn:hover {
+  border-color: #dadce0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #e4e4e4;
+  background: #f2f2f2;
+}
+
+.footer-top {
+  display: flex;
+  padding: 13px 20px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-right {
+  margin-left: auto;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #70757a;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

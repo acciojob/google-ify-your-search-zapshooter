@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <!-- the entire body must be written by student -->
+    <nav class="nav">
+      <a href="#">Gmail</a>
+      <a href="#">Images</a>
+      <div class="nav-apps" aria-label="Google apps">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+      <button class="signin-btn">Sign in</button>
+    </nav>
+
+    <main class="main">
+      <div class="google-logo">
+        <svg viewBox="0 0 272 92" xmlns="http://www.w3.org/2000/svg">
+          <text y="80" font-size="88" font-family="Arial, sans-serif" font-weight="bold">
+            <tspan fill="#4285f4">G</tspan>
+            <tspan fill="#ea4335">o</tspan>
+            <tspan fill="#fbbc05">o</tspan>
+            <tspan fill="#4285f4">g</tspan>
+            <tspan fill="#34a853">l</tspan>
+            <tspan fill="#ea4335">e</tspan>
+          </text>
+        </svg>
+      </div>
+
+      <div class="search-wrapper">
+        <input class="search-bar" type="text" aria-label="Search" />
+        <svg class="mic-icon" width="24" height="24" viewBox="0 0 24 24" aria-label="Search by voice">
+          <path fill="#4285f4" d="M12 15c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3z"/>
+          <path fill="#34a853" d="M17 12c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-2.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+        </svg>
+      </div>
+
+      <div class="btn-row">
+        <button class="google-btn">Google Search</button>
+        <button class="google-btn">I'm Feeling Lucky</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <a href="#">India</a>
+          <a href="https://policies.google.com/privacy" target="_blank">About</a>
+        </div>
+        <div class="footer-right">
+          <a href="https://policies.google.com/privacy" target="_blank">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Settings</a>
+        </div>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
